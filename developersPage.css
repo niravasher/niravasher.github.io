@@ -89,6 +89,12 @@
 	width: 100%;
 }
 
+.centered {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+}
+
 .developers > div > p
 {
 	text-align: center;
