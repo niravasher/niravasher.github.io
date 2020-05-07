@@ -71,6 +71,12 @@
 
 .overlay > pre {
 	font-family: 'Baloo 2', cursive;
+	margin-right: 5px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-32%,-60%);
+	font-size: 60px;
 }
 
 .vision
