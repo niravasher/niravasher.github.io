@@ -113,6 +113,12 @@ button:focus
 	overflow: hidden;
 }
 
+.feed > .name {
+	position: relative;
+  top: 0vh;
+  left: 6vh;
+}
+
 .feed > .top > img
 {
 	width: 5vw;
@@ -135,7 +141,6 @@ button:focus
 {
 	position: relative;
 	top: 3vh;
-	left: 7vw;
 	border: none;
 	width: auto;
 	padding: 5px;
@@ -147,7 +152,6 @@ button:focus
 {
 	position: relative;
 	top: 3vh;
-	left: 7vw;
 	border: none;
 	width: auto;
 	padding: 5px;
@@ -159,7 +163,7 @@ button:focus
 {
 	position: relative;
 	top: 5vh;
-  left: 10vw;
+  left: 5vw;
 	font-size: 15px;
 	width: 90vw;
 }
@@ -168,7 +172,7 @@ button:focus
 {
 	position: relative;
 	top: 10vh;
-	left: -80.5vw;
+	left: -85.5vw;
 	text-align: center;
 	z-index: 5;
 }
@@ -177,7 +181,7 @@ button:focus
 {
 	position: relative;
 	top: 9vh;
-  left: 10vw;
+  left: 5vw;
 	text-align: center;
 	z-index: 5;
 }
