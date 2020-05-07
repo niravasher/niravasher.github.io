@@ -1,0 +1,254 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projects</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'pages/developers.css' %}" />
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+<body>
+
+	<div class="developers">
+		<button class="closeBtnOne" style="opacity: 0;">&times;</button>
+		<button class="closeBtnTwo" style="opacity: 0;">&times;</button>
+		<button class="closeBtnThree" style="opacity: 0;">&times;</button>
+		<button class="closeBtnFour" style="opacity: 0;">&times;</button>
+		<button class="closeBtnFive" style="opacity: 0;">&times;</button>
+		<h1>DEVELOPERS</h1>
+		<div class="nirav">
+			<img src="images/20.jpg">
+			<p class="name">NIRAV  ASHER</p>
+			<p class="gitLink" style="opacity: 0;"><a href="https://github.com/niravasher"> github link</a></p>
+			<p class="number" style="opacity: 0;">9869516418</p>
+		</div>
+		<div class="saujas">
+			<img src="images/20.jpg">
+			<p class="name">SAUJAS  ADARKAR</p>
+			<p class="gitLink" style="opacity: 0;" data-number='1'><a href="https://github.com/Saujas"> github link</a></p>
+			<p class="number" style="opacity: 0;" data-number='1'>9920829405</p>
+		</div>
+		<div class="sombudh">
+			<img src="images/20.jpg">
+			<p class="name">SOMBUDDHA  CHAKRAVARTY</p>
+			<p class="gitLink" style="opacity: 0;" data-number='1'><a href="https://github.com/Saujas"> github link</a></p>
+			<p class="number" style="opacity: 0;" data-number='1'>9920829405</p>
+		</div>
+		<div class="abhijit">
+			<img src="images/20.jpg">
+			<p class="name">ABHIJIT  KUMAR</p>
+			<p class="gitLink" style="opacity: 0;" data-number='1'><a href="https://github.com/Saujas"> github link</a></p>
+			<p class="number" style="opacity: 0;" data-number='1'>9920829405</p>
+		</div>
+		<div class="neelabh">
+			<img src="images/20.jpg">
+			<p class="name">NEELABH  SINHA</p>
+			<p class="gitLink" style="opacity: 0;" data-number='1'><a href="https://github.com/Saujas"> github link</a></p>
+			<p class="number" style="opacity: 0;" data-number='1'>9920829405</p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var nirav = document.getElementsByClassName('nirav')[0];
+		var saujas = document.getElementsByClassName('saujas')[0];
+		var sombudh = document.getElementsByClassName('sombudh')[0];
+		var abhijit = document.getElementsByClassName('abhijit')[0];
+		var neelabh = document.getElementsByClassName('neelabh')[0];
+		var gitLink = document.getElementsByClassName('gitLink');
+		var number = document.getElementsByClassName('number');
+		closeBtnOne = document.getElementsByClassName('closeBtnOne')[0];
+		closeBtnTwo = document.getElementsByClassName('closeBtnTwo')[0];
+		closeBtnThree = document.getElementsByClassName('closeBtnThree')[0];
+		closeBtnFour = document.getElementsByClassName('closeBtnFour')[0];
+		closeBtnFive = document.getElementsByClassName('closeBtnFive')[0];
+		closeBtnOne.addEventListener('click', closeNavOne);
+		closeBtnTwo.addEventListener('click', closeNavTwo);
+		closeBtnThree.addEventListener('click', closeNavThree);
+		closeBtnFour.addEventListener('click', closeNavFour);
+		closeBtnFive.addEventListener('click', closeNavFive);
+		nirav.addEventListener('click', comeForward);
+		saujas.addEventListener('click', comeForwardTwo);
+		sombudh.addEventListener('click', comeForwardThree);
+		abhijit.addEventListener('click', comeForwardFour);
+		neelabh.addEventListener('click', comeForwardFive);
+
+		function comeForward()
+		{
+			nirav.style.transition = 'all 0.5s linear';
+			nirav.style.zIndex = '5';
+			nirav.style.position = 'absolute';
+			nirav.style.left = '50%';
+			nirav.style.top = '50%';
+			nirav.style.transform = 'translate(-50%, -50%)';
+			nirav.style.width = '42vw';
+			nirav.style.height = '70vh';
+			closeBtnOne.style.display = 'block';
+			setTimeout(function()
+			{
+				gitLink[0].style.opacity = 1;
+				number[0].style.opacity = 1;
+				closeBtnOne.style.opacity = 1;
+			}, 500);
+		}
+
+		function comeForwardTwo()
+		{
+			this.style.transition = 'all 0.5s linear';
+			this.style.zIndex = '5';
+			this.style.position = 'absolute';
+			this.style.left = '50%';
+			this.style.top = '50%';
+			this.style.transform = 'translate(-50%, -50%)';
+			this.style.width = '42vw';
+			this.style.height = '70vh';
+			closeBtnTwo.style.display = 'block';
+			setTimeout(function()
+			{
+				gitLink[1].style.opacity = 1;
+				number[1].style.opacity = 1;
+				closeBtnTwo.style.opacity = 1;
+			}, 500);
+		}
+
+		function comeForwardThree()
+		{
+			this.style.transition = 'all 0.5s linear';
+			this.style.zIndex = '5';
+			this.style.position = 'absolute';
+			this.style.left = '50%';
+			this.style.top = '50%';
+			this.style.transform = 'translate(-50%, -50%)';
+			this.style.width = '42vw';
+			this.style.height = '70vh';
+			closeBtnThree.style.display = 'block';
+			setTimeout(function()
+			{
+				gitLink[2].style.opacity = 1;
+				number[2].style.opacity = 1;
+				closeBtnThree.style.opacity = 1;
+			}, 500);
+		}
+
+		function comeForwardFour()
+		{
+			this.style.transition = 'all 0.5s linear';
+			this.style.zIndex = '5';
+			this.style.position = 'absolute';
+			this.style.left = '50%';
+			this.style.top = '50%';
+			this.style.transform = 'translate(-50%, -50%)';
+			this.style.width = '42vw';
+			this.style.height = '70vh';
+			closeBtnFour.style.display = 'block';
+			setTimeout(function()
+			{
+				gitLink[3].style.opacity = 1;
+				number[3].style.opacity = 1;
+				closeBtnFour.style.opacity = 1;
+			}, 500);
+		}
+
+		function comeForwardFive()
+		{
+			this.style.transition = 'all 0.5s linear';
+			this.style.zIndex = '5';
+			this.style.position = 'absolute';
+			this.style.left = '50%';
+			this.style.top = '50%';
+			this.style.transform = 'translate(-50%, -50%)';
+			this.style.width = '42vw';
+			this.style.height = '70vh';
+			closeBtnFive.style.display = 'block';
+			setTimeout(function()
+			{
+				gitLink[4].style.opacity = 1;
+				number[4].style.opacity = 1;
+				closeBtnFive.style.opacity = 1;
+			}, 500);
+		}
+
+		function closeNavOne()
+		{
+			console.log('goBack');
+			nirav.style.transition = 'all 0.5s linear';
+			nirav.style.position = 'absolute';
+			nirav.style.left = '20vw';
+			nirav.style.top = '32vh';
+			nirav.style.width = '20vw';
+			nirav.style.height = '40vh';
+			closeBtnOne.style.opacity = 0;
+			setTimeout(function()
+			{
+				gitLink[0].style.opacity = 0;
+				number[0].style.opacity = 0;
+			}, 500);
+		}
+
+		function closeNavTwo()
+		{
+			saujas.style.transition = 'all 0.5s linear';
+			saujas.style.position = 'absolute';
+			saujas.style.left = '50vw';
+			saujas.style.top = '32vh';
+			saujas.style.width = '20vw';
+			saujas.style.height = '40vh';
+			closeBtnTwo.style.opacity = 0;
+			setTimeout(function()
+			{
+				gitLink[1].style.opacity = 0;
+				number[1].style.opacity = 0;
+			}, 500);
+		}
+
+		function closeNavThree()
+		{
+			sombudh.style.transition = 'all 0.5s linear';
+			sombudh.style.position = 'absolute';
+			sombudh.style.left = '80vw';
+			sombudh.style.top = '32vh';
+			sombudh.style.width = '20vw';
+			sombudh.style.height = '40vh';
+			closeBtnThree.style.opacity = 0;
+			setTimeout(function()
+			{
+				gitLink[2].style.opacity = 0;
+				number[2].style.opacity = 0;
+			}, 500);
+		}
+
+		function closeNavFour()
+		{
+			abhijit.style.transition = 'all 0.5s linear';
+			abhijit.style.position = 'absolute';
+			abhijit.style.left = '35vw';
+			abhijit.style.top = '75vh';
+			abhijit.style.width = '20vw';
+			abhijit.style.height = '40vh';
+			closeBtnFour.style.opacity = 0;
+			setTimeout(function()
+			{
+				gitLink[3].style.opacity = 0;
+				number[3].style.opacity = 0;
+			}, 500);
+		}
+
+		function closeNavFive()
+		{
+			neelabh.style.transition = 'all 0.5s linear';
+			neelabh.style.position = 'absolute';
+			neelabh.style.left = '65vw';
+			neelabh.style.top = '75vh';
+			neelabh.style.width = '20vw';
+			neelabh.style.height = '40vh';
+			closeBtnFive.style.opacity = 0;
+			setTimeout(function()
+			{
+				gitLink[4].style.opacity = 0;
+				number[4].style.opacity = 0;
+			}, 500);
+		}
+
+	</script>
+
+</body>
+</html>

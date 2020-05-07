@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News feed page</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'pages/feedPage.css' %}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+</head>
+<body>
+
+	<div class="head">
+		<img src="images/2.png">
+		<a href="/new/">New Project</a>
+		<a href="/view/">Projects</a>
+		<a href="/dev/">Developer Team</a>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	</div>
+
+	<div class="buttons">
+		<a class="onGoing" href="#">onGoing</a>
+		<a class="archieved" href="#">Archieved</a>
+	</div>
+        {% for project in project_data reversed %}
+	<div class="feed"style="margin-bottom: 5px;">
+		<div class="top">
+			<img src="images/2.png">
+			<button class="coding">Coding</button>
+			<button class="ml">ML</button>
+			<p class="name">{{ project.title }}</p>
+			<p class="descriptionCopy">{{ project.description }}</p>
+			<p class="attachmentCopy">Attachments</p>
+			<p class="linkCopy">Links</p>
+		</div>
+		<div class="comments"><a href="#">View all comments</a></div>
+	</div>
+        {% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'pages/NewsFeed.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+<body>
+
+	<div class="head">
+		<img src="images/2.png">
+		<a href="/new/">New Project</a>
+		<a href="/view/">Projects</a>
+		<a href="/dev/">Developer Team</a>
+	</div>
+
+	<div class="quote">
+		<h1>Temporary Quote from the internet to motivate people and fill the space</h1>
+	</div>
+
+	<div class="overview">
+		<h1>Project Overview</h1>
+		<form action='' method="post" enctype="multipart/form-data" id="proj_form" > {% csrf_token %}
+	    	        <p class="title">Title of the project: <input type="text" name="{{ form.title.name }}" required></p>
+			<p class="description">Description : (150words) <textarea rows="4" cols="40" name="{{ form.description.name }}" id="proj_form" required></textarea></p>
+			<p class="links">Links if any : <input type="url" name="{{ form.links.name }}"></p>
+	   		<p class="attachment">Attachments if any: <input type="file" name="{{ form.files.name }}"></p>
+			<input type="submit" class="submit" name="submit" value="Submit" >  
+		</form>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,204 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+button:hover
+{
+	cursor: pointer;
+}
+
+button:focus
+{
+	outline: none;
+}
+
+.head
+{
+	width: 100vw;
+	height: 12vh;
+	background: #eee;
+	border-bottom: 2px solid rgb(0,180,255);
+	overflow-y: hidden;
+}
+
+.head > img
+{
+	width: 5.8vw;
+	position: relative;
+	left: 5vw;
+}
+
+.head > a
+{
+	position: relative;
+	left: 55vw;
+	top: -5vh;
+	text-decoration: none;
+	padding-left: 2%;
+	color: black;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+}
+
+.head > a:nth-child(3)
+{
+	text-decoration: underline;
+}
+
+.head > span
+{
+	opacity: 0;
+}
+
+.buttons
+{
+	height: 10vh;
+}
+
+.buttons > .onGoing
+{
+	position: relative;
+	top: 2vh;
+	left: 2vw;
+	background: skyblue;
+	border: 2px solid skyblue;
+	width: auto;
+	height: auto;
+	padding: 5px;
+	border-radius: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.buttons > .archieved
+{
+	position: relative;
+	top: 2vh;
+	left: 5vw;
+	width: auto;
+	height: auto;
+	padding: 5px;
+	background: transparent;
+	border: 2px solid skyblue;
+	border-radius: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.line1
+{
+	width: 90vw;
+	position: absolute;
+	left: 5vw;
+	border-top: 2px solid black;
+}
+
+.feed
+{
+	width: 100vw;
+	height: 37vh;
+	background: #eee;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.feed > .top
+{
+	height: 90%;
+	overflow: hidden;
+}
+
+.feed > .top > img
+{
+	width: 5vw;
+	position: relative;
+	top: 2vh;
+	left: 5vw;
+}
+
+.feed > .top > p
+{
+	display: inline-block;
+	position: relative;
+	left: -1vw;
+	top: -3vh;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.feed > .top > .coding
+{
+	position: relative;
+	top: 0vh;
+	left: 7vw;
+	border: none;
+	width: auto;
+	padding: 5px;
+	color: white;
+	background: black;
+}
+
+.feed > .top > .ml
+{
+	position: relative;
+	top: 0vh;
+	left: 7vw;
+	border: none;
+	width: auto;
+	padding: 5px;
+	color: white;
+	background: black;
+}
+
+.feed > .top > .descriptionCopy
+{
+	position: relative;
+	top: 2vh;
+        left: 10vw;
+	font-size: 15px;
+	width: 90vw;
+}
+
+.feed > .top > .attachmentCopy
+{
+	position: relative;
+	top: 7vh;
+	left: -80.5vw;
+	text-align: center;
+	z-index: 5;
+}
+
+.feed > .top > .linkCopy
+{
+	position: relative;
+	top: 6vh;
+        left: 10vw;
+	text-align: center;
+	z-index: 5;
+}
+
+.feed > .comments
+{
+	height: 10%;
+}
+
+.feed > .comments > a
+{
+	text-decoration: none;
+	color: grey;
+	position: relative;
+	left: 6vw;
+}
+
+.line2
+{
+	width: 90vw;
+	position: absolute;
+	left: 5vw;
+	border-bottom: 2px solid black;
+}

@@ -1,0 +1,323 @@
+*
+{
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+button:hover
+{
+	cursor: pointer;
+}
+
+*
+{
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.head
+{
+	width: 100vw;
+	height: 12vh;
+	background: #eee;
+	border-bottom: 2px solid rgb(0,180,255);
+	overflow-y: hidden;
+}
+
+.head > img
+{
+	width: 5.8vw;
+	position: relative;
+	left: 5vw;
+}
+
+.head > a
+{
+	position: relative;
+	left: 55vw;
+	top: -5vh;
+	text-decoration: none;
+	padding-left: 2%;
+	color: black;
+	font-size: 20px;
+	font-family: 'Muli', sans-serif;
+}
+
+.head > a:nth-child(2)
+{
+	text-decoration: underline;
+}
+
+.quote
+{
+	width: 100vw;
+	height: 15vh;
+	position: absolute;
+	top: 12.2vh;
+	border-bottom: 2px solid skyblue;
+}
+
+.quote > h1
+{
+	text-align: center;
+	position: relative;
+	top: 5vh;
+	font-family: 'Chela One', cursive;
+	font-size: 20px;
+}
+
+.overview
+{
+	position: absolute;
+	top: 28vh;
+	width: 100vw;
+	height: 80vh;
+}
+
+.overview > h1
+{
+	font-family: 'PT Sans', sans-serif;
+	position: relative;
+	left: 5vw;
+}
+
+.overview > .title
+{
+	position: relative;
+	top: 2vh;
+	left: 5vw;
+	font-size: 20px;
+	font-family: 'Muli', sans-serif;
+}
+
+.overview > .title > input
+{
+	width: 50vw;
+	border: none;
+	outline: none;
+	height: 4vh;
+	font-size: 18px;
+	background: #ccc;
+	position: relative;
+	left: 15vw;
+	border-radius: 5px;
+}
+
+.overview > .description
+{
+	position: relative;
+	top: 8vh;
+	left: 5vw;
+	font-size: 20px;
+	font-family: 'Muli', sans-serif;
+}
+
+.overview > .description > textarea
+{
+	width: 50vw;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	background: #ccc;
+	position: relative;
+	left: 11vw;
+	border-radius: 5px;
+}
+
+.overview > form
+{
+	position: relative;
+	top: 25vh;
+	left: 5vw;
+	font-size: 20px;
+}
+
+.overview > form > .submit
+{
+	font-size: 20px;
+	width: 10vw;
+	height: 5vh;
+}
+
+.overview > .links
+{
+	position: relative;
+	top: 15vh;
+	left: 5vw;
+	font-size: 20px;
+	font-family: 'Muli', sans-serif;
+}
+
+.overview > .links > input
+{
+	width: 50vw;
+	border: none;
+	outline: none;
+	height: 4vh;
+	font-size: 18px;
+	background: #ccc;
+	position: relative;
+	left: 19vw;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 1050px)
+{
+	.head
+	{
+		height: 8vh;
+	}
+
+	.head > img
+	{
+		width: 10vw;
+	}
+
+	.head > a
+	{
+		left: 30vw;
+		font-size: 28px;
+		top: -3vh;
+	}
+
+	.quote
+	{
+		height: 6vh;
+	}
+
+	.quote > h1
+	{
+		font-size: 25px;
+		top: 0vh;
+	}
+
+	.overview > h1
+	{
+		font-size: 40px;
+	}
+
+	.overview > .title
+	{
+		font-size: 30px;
+	}
+
+	.overview > .description
+	{
+		font-size: 30px;
+	}
+
+	.overview > .description > textarea
+	{
+		position: relative;
+		left: 7vw;
+	}
+
+	.overview > .links
+	{
+		font-size: 30px;
+	}
+
+	.overview > .links > input
+	{
+		position: relative;
+		left: 23vw;
+	}
+
+	.overview > form
+	{
+		font-size: 30px;
+	}
+
+	.overview > form > input
+	{
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	.head > a
+	{
+		font-size: 25px;
+		position: relative;
+		left: 15vw;
+	}
+
+	.quote
+	{
+		position: absolute;
+		top: 8.2vh;
+		height: 15vh;
+	}
+
+	.quote > h1
+	{
+		font-size: 25px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.overview
+	{
+		position: absolute;
+		top: 23.5vh;
+		height: 70vh;
+	}
+
+	.overview > .title
+	{
+		font-size: 25px;
+	}
+
+	.overview > .title > input
+	{
+		left: 12vw;
+	}
+
+	.overview > .description
+	{
+		font-size: 25px;
+	}
+
+	.overview > .description > textarea
+	{
+		position: relative;
+		left: 3vw;
+	}
+
+	.overview > .links
+	{
+		font-size: 25px;
+	}
+
+	.overview > .links > input
+	{
+		position: relative;
+		left: 21vw;
+	}
+
+	.overview > form
+	{
+		font-size: 30px;
+	}
+
+	.overview > form > input
+	{
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 450px)
+{
+	.head > a
+	{
+		display: none;
+	}
+
+	.quote > h1
+	{
+		font-size: 20px;
+	}
+}

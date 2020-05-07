@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projects</title>
+	<link rel="stylesheet" type="text/css" href="projectBits.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+</head>
+<body>
+
+	<div class="head">
+		<img src="images/2.png">
+		<a href="#">New Project</a>
+		<a href="#">View Projects</a>
+		<a href="#">Developer Team</a>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	</div>
+
+	<div class="image"></div>
+
+	<div class="overlay"></div>
+
+	<div class="vision">
+		<h1>Vision</h1>
+		<p>The purpose of the site is very enormous. Description will be given later. For now its not printed but will be ready very soon.</p>
+	</div>
+
+	<div id="mySidenav" class="sidenav">
+		<a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">New Project</a>
+		<a href="#">View Project</a>
+		<a href="#">Developer Team</a>
+	</div>
+
+	<div class="footer">
+		<p>The purpose of the site is very enormous. Description will be given later. For now its not printed but will be ready very soon.</p>
+		<hr>
+		<h1>Copyright © 2018 inCUBE. All Rights Reserved</h1> 
+	</div>
+
+	<script>
+		function openNav()
+		{
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav()
+		{
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+</body>
+</html>
