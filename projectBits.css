@@ -25,7 +25,7 @@
 {
 	position: relative;
 	left: 55vw;
-	top: 2.5vh;
+	top: -5vh;
 	text-decoration: none;
 	padding-left: 2%;
 	color: black;
@@ -212,7 +212,7 @@
 		opacity: 1;
 		position: relative;
 		left: 75vw;
-		top: -2.5vh;
+		top: -5vh;
 	}
 
 	.head > img
