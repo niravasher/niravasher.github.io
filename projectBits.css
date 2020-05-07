@@ -69,6 +69,10 @@
 	background: rgba(0,0,0,0);
 }
 
+.overlay > h1 {
+	font-family: 'Baloo 2', cursive;
+}
+
 .vision
 {
 	position: absolute;
